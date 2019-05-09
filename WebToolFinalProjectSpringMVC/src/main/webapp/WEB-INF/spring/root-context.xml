@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+    <bean id="flightValidator" class="com.swagath.airlinebooking.controller.FlightBookingValidator"></bean>	
+	<bean id="airplaneValidator" class="com.swagath.airlinebooking.controller.AirlineValidator"></bean>	
+	<bean id="passengerValidator" class="com.swagath.airlinebooking.controller.TravellerValidator"></bean>	
+	<bean id="paymentValidator" class="com.swagath.airlinebooking.controller.PaymentProcessValidator"></bean>
+		
+</beans>

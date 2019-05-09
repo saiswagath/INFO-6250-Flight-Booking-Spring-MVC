@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>    
+	    <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+	    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+	    <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+	    <property name="hibernate.connection.username">system</property>
+	    <property name="hibernate.connection.password">system</property>
+	    <property name="hibernate.hbm2ddl.auto">update</property>
+	    <property name="hibernate.show_sql">true</property>
+        
+      <mapping class="com.swagath.airlinebooking.pojo.Airline" />
+	  <mapping class="com.swagath.airlinebooking.pojo.Destinations" />
+	  <mapping class="com.swagath.airlinebooking.pojo.FlightInformation" />
+	  <mapping class="com.swagath.airlinebooking.pojo.PaymentProcessor" />
+	  <mapping class="com.swagath.airlinebooking.pojo.Traveller" />
+	  <mapping class="com.swagath.airlinebooking.pojo.TravelTicket"/>
+	  <mapping class="com.swagath.airlinebooking.pojo.User"/>
+ 
+    </session-factory>
+</hibernate-configuration>
